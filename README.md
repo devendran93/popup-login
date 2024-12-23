@@ -1,2 +1,49 @@
-Press Here Button 
-After POPUP Login Form Showssss/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ERP Portal</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <h1>Student ERP Portal</h1>
+    <button id="open-popup">Press Here</button>
+
+    <!-- Popup Structure -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <form class="login-form">
+                <div class="login-welcome-row">
+                    <a href="#" title="MASS COLLEGE">
+                        <img src="images/logo.jpg" alt="Mass" class="logo">
+                    </a>
+                    <h2>MASS GROUP OF INSTITUTIONS</h2>
+            <p>Please Enter the Student Details</p>
+            </div>
+        <div class="input__wrapper">
+                <input type="email" id="email" name="email" class="input__field" placeholder="Email" required>
+        </div>
+        <div class="input__wrapper">
+            <input id="password" type="password" class="input__field" placeholder="Password"
+                title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" required>
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <button type="submit" class="login-button   ">
+            Login
+        </button>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="submission.js"></script>
+    
+</body>
+</html>
